@@ -1,3 +1,4 @@
+import tejupy
 #----------------------------------------------------------------------
 def removeepsilon(key,prod):
 	for k in prod:
