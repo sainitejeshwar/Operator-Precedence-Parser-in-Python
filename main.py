@@ -150,6 +150,7 @@ def parsing_table(prod,start,leading_dic,trailing_dic,nt,t):
 				for j in range(len(i)-2):
 					if(i[j] in t and i[j+2] in t):
 						mat[ter_map[i[j]]][ter_map[i[j+2]]] = '='
+	print_mat()
 
 def main():
 	f = open('input.txt')
@@ -160,6 +161,7 @@ def main():
 	for i in input_file:
 		tmp = i.split('->')
 		prod[tmp[0]]  = tmp[1].split('|')
+		
 	terminalandvariables(prod)
 	checkepsilon(prod)
 	checkadjacent(prod)
