@@ -150,7 +150,7 @@ def parsing_table(prod,start,leading_dic,trailing_dic,nt,t):
 				for j in range(len(i)-2):
 					if(i[j] in t and i[j+2] in t):
 						mat[ter_map[i[j]]][ter_map[i[j+2]]] = '='
-	print_mat()
+	tejupy.print_mat()
 
 def main():
 	f = open('input.txt')
